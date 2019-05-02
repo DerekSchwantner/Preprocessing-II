@@ -1,1 +1,37 @@
 // Mixins in here
+
+// Font Styles
+
+.theme-style {
+    font-family: 'Indie Flower', cursive;
+    color: @shark;
+}
+
+
+// Button style
+
+.custom-button(@width, @height) {
+    width: @width;
+    height: @height;
+    color: @main-bg;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: @button-bg;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: white;
+      color: @button-bg;
+      border: 1px solid black;
+    }
+  }
+
+  //media query dimensions @ 500px
+
+  .mobile-format {
+      width: 80%;
+      align-content: center;
+      justify-content: center;
+      margin: 15px auto;
+  }

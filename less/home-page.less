@@ -1,5 +1,13 @@
 .home {
-
+  .top-content {
+    border-bottom: 2px dashed @silver;
+    @media @mobile {
+      .mobile-format();
+    }
+    .top-txt {
+      margin: 15px 0;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -11,11 +19,17 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile-format();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile-format();
+      }
 
       img {
         border-radius: 10px;
@@ -52,10 +66,23 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-wrap: wrap;
+      .mobile-format();
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        .mobile-format();
+      }
+      .btn {
+        .custom-button(80%, 40px);
+        @media @mobile {
+          width: 90%;
+        }
+      }
     }
   }
 }// home

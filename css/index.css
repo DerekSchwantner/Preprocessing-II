@@ -1,3 +1,13 @@
+.theme-style {
+  font-family: 'Indie Flower', cursive;
+  color: #212529;
+}
+.mobile-format {
+  width: 80%;
+  align-content: center;
+  justify-content: center;
+  margin: 15px auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +178,46 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  header {
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
+header nav {
+  width: 100%;
+}
+header nav .nav-item {
+  font-size: 1.7rem;
+  color: #212529;
+  text-decoration: none;
+  margin: 1.25rem 2rem;
+}
+header nav .logo {
+  display: inline-block;
+  margin: 1.25rem 2rem;
+  font-family: 'Indie Flower', cursive;
+  color: #212529;
+  text-decoration: none;
+  font-size: 4rem;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  header nav .logo {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,6 +229,20 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .top-content {
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .home .top-content {
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
+}
+.home .top-content .top-txt {
+  margin: 15px 0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -189,9 +253,25 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (min-width: 0px) and (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -221,7 +301,44 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 0px) and (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    align-content: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
+}
+.home .content-pick .destination .btn {
+  width: 80%;
+  height: 40px;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: #17A2B8;
+  border: 1px solid black;
+}
+@media (min-width: 0px) and (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 90%;
+  }
 }
